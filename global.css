@@ -1,0 +1,24 @@
+:root.dark{
+    --global-background: rgb(36, 36, 36);
+}
+:root.light{
+    --global-background:rgb(240, 240, 240);
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    background-color: var(--global-background);
+
+}
+
+/* it takes the default theme of the pc or browser */
+@media(prefers-color-scheme: dark){
+    :root{
+        --global-background: rgb(36, 36, 36);   
+    }
+}
